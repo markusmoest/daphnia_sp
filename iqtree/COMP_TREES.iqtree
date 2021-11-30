@@ -1,0 +1,147 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Partition file name: best.nex
+Input file name: sperm_alignment_all.fas
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 929738
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 18 taxa with 4 partitions and 1602 total sites (0% missing data)
+
+  ID  Name     Type	Seq	Site	Unique	Infor	Invar	Const
+   1  16S_12S  DNA	18	972	428	305	570	570
+   2  COI_1    DNA	18	210	47	37	167	167
+   3  COI_2    DNA	18	210	6	1	209	209
+   4  COI_3    DNA	18	210	206	199	3	3
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  TVM+F+I+G4     0.3509  TVM{1.47076,16.8799,5.30701,1.15409}+F{0.330863,0.136018,0.19607,0.337049}+I{0.508044}+G4{1.28269}
+   2  GTR+F+I+G4     0.1975  GTR{0.0001,1.36596,2.2664,0.0001,99.9859}+F{0.260317,0.201852,0.324868,0.212963}+I{0.601773}+G4{3.4761}
+   3  F81+F+I        0.0143  F81+I{0.995203}
+   4  GTR+F+I+G4     5.7924  GTR{0.0001,8.92828,0.443461,0.0001,7.81488}+F{0.291347,0.136279,0.147393,0.42498}+I{1.60592e-11}+G4{0.919387}
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -10740.5494 (s.e. 277.9837)
+Unconstrained log-likelihood (without tree): -6308.4344
+Number of free parameters (#branches + #model parameters): 69
+Akaike information criterion (AIC) score: 21619.0989
+Corrected Akaike information criterion (AICc) score: 21625.4044
+Bayesian information criterion (BIC) score: 21990.2505
+
+Total tree length (sum of branch lengths): 6.1575
+Sum of internal branch lengths: 1.8314 (29.7421% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0006) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Simocephalus_sp2_NA' is drawn at root
+
++---------------------------Simocephalus_sp2_NA
+|
++----------------------------------------------------------Scapholeberis_NA
+|
+|         +---------------------------------Cerio_Oman
+|      +--|
+|      |  |                    +--------------FIXINB3_mtDNA
+|      |  |                 +--|
+|      |  |                 |  +-----------Dlum_MO
+|      |  |              +--|
+|      |  |              |  +----------Dsin_sRUTU
+|      |  |           +--|
+|      |  |           |  +------------D_similis_EUR
+|      |  |      +----|
+|      |  |      |    |  +-------------------------D_hisp
+|      |  |      |    +**|
+|      |  |      |       +--------------D_carinata_AUS
+|      |  +------|
+|      |         |        +------------D_doli
+|      |         +--------|
+|      |                  +-----------D_barb
++------|
+       |                              +--Dpul_CHSP
+       |      +-----------------------|
+       |      |                       +------D_pulicaria
+       +------|
+              |                                       +--Dlongi
+              |                                +------|
+              |                                |      +--D._dentivera_COI
+              |           +--------------------|
+              |           |                    |      +--D._galeata_COI
+              |           |                    +------|
+              |           |                           +--D_mendotae_NA
+              +-----------|
+                          +------------------------D._curvirostris_COI
+
+Tree in newick format:
+
+(Simocephalus_sp2_NA:0.4269612650,Scapholeberis_NA:0.9077972034,((Cerio_Oman:0.5320380827,(((((FIXINB3_mtDNA:0.2354745721,Dlum_MO:0.1837229312):0.0261705367,Dsin_sRUTU:0.1683001072):0.0246219368,D_similis_EUR:0.1979260656):0.0416240396,(D_hisp:0.3983307674,D_carinata_AUS:0.2345360474):0.0000023555):0.0848302688,(D_doli:0.2094636992,D_barb:0.1967951466):0.1512591319):0.1173537515):0.0333959547,((Dpul_CHSP:0.0391174647,D_pulicaria:0.1119789377):0.3738928569,(((Dlongi:0.0411932595,D._dentivera_COI:0.0418623888):0.1191752161,(D._galeata_COI:0.0052245523,D_mendotae_NA:0.0048471017):0.1066848230):0.3295218341,D._curvirostris_COI:0.3905431967):0.1912193304):0.1167588105):0.1148501243);
+
+
+USER TREES
+----------
+
+See COMP_TREES.trees for trees with branch lengths.
+
+Tree      logL    deltaL  bp-RELL    p-KH     p-SH       c-ELW       p-AU
+-------------------------------------------------------------------------
+  1  -10736.3722       0    0.86 +  0.851 +      1 +     0.853 +    0.867 + 
+  2 -10744.91971  8.5475    0.14 +  0.149 +  0.149 +     0.147 +    0.133 + 
+
+deltaL  : logL difference from the maximal logl in the set.
+bp-RELL : bootstrap proportion using RELL method (Kishino et al. 1990).
+p-KH    : p-value of one sided Kishino-Hasegawa test (1989).
+p-SH    : p-value of Shimodaira-Hasegawa test (2000).
+c-ELW   : Expected Likelihood Weight (Strimmer & Rambaut 2002).
+p-AU    : p-value of approximately unbiased (AU) test (Shimodaira, 2002).
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+All tests performed 10000 resamplings using the RELL method.
+
+TIME STAMP
+----------
+
+Date and time: Fri Feb 19 20:49:50 2021
+Total CPU time used: 0.853 seconds (0h:0m:0s)
+Total wall-clock time used: 2.19 seconds (0h:0m:2s)
+

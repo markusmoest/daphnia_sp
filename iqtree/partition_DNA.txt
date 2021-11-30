@@ -1,0 +1,8 @@
+#nexus
+begin sets;
+  CHARSET 16S=sperm_alignment_all.fas: 1-472;
+  CHARSET COI_1=sperm_alignment_all.fas: 473-1102\3;
+  CHARSET COI_2=sperm_alignment_all.fas: 474-1102\3;
+  CHARSET COI_3=sperm_alignment_all.fas: 475-1102\3;
+  CHARSET 12S=sperm_alignment_all.fas: 1103-1602;
+end;

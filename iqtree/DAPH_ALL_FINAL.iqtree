@@ -1,0 +1,182 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Partition file name: best.nex
+Input file name: sperm_alignment_all.fas
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (10000 replicates)
+Random seed number: 402921
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 18 taxa with 4 partitions and 1602 total sites (0% missing data)
+
+  ID  Name     Type	Seq	Site	Unique	Infor	Invar	Const
+   1  16S_12S  DNA	18	972	428	305	570	570
+   2  COI_1    DNA	18	210	47	37	167	167
+   3  COI_2    DNA	18	210	6	1	209	209
+   4  COI_3    DNA	18	210	206	199	3	3
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  TVM+F+I+G4     0.3120  TVM{1.418,16.4721,5.1265,1.0737}+F{0.330863,0.136018,0.19607,0.337049}+I{0.507785}+G4{1.29642}
+   2  GTR+F+I+G4     0.1796  GTR{0.0001,1.37062,2.21281,0.0001,99.29}+F{0.260317,0.201852,0.324868,0.212963}+I{0.603959}+G4{3.75847}
+   3  F81+F+I        0.0104  F81+I{0.995176}
+   4  GTR+F+I+G4     5.9943  GTR{0.0001,13.9295,0.812257,0.0001,12.9142}+F{0.291347,0.136279,0.147393,0.42498}+I{2.50558e-10}+G4{0.858759}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -10743.7109 (s.e. 278.2429)
+Unconstrained log-likelihood (without tree): -6308.4344
+Number of free parameters (#branches + #model parameters): 69
+Akaike information criterion (AIC) score: 21625.4217
+Corrected Akaike information criterion (AICc) score: 21631.7272
+Bayesian information criterion (BIC) score: 21996.5733
+
+Total tree length (sum of branch lengths): 6.8573
+Sum of internal branch lengths: 2.0372 (29.7079% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Simocephalus_sp2_NA' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++--------------------------Simocephalus_sp2_NA
+|
++-------------------------------------------------------Scapholeberis_NA
+|
+|    +-----------------------------Cerio_Oman
++----| (82.8/72)
+     |                +--------------FIXINB3_mtDNA
+     |             +--| (100/99)
+     |             |  |        +---------Dsin_sRUTU
+     |             |  |     +--| (100/100)
+     |             |  |     |  +-----------D_similis_EUR
+     |             |  |  +--| (100/100)
+     |             |  |  |  +-----------Dlum_MO
+     |             |  +--| (100/100)
+     |             |     +--------------D_carinata_AUS
+     |         +---| (95.8/96)
+     |         |   +-----------------------D_hisp
+     |   +-----| (93.9/89)
+     |   |     |        +------------D_doli
+     |   |     +--------| (99.7/100)
+     |   |              +-----------D_barb
+     +---| (81.9/69)
+         |                              +--Dpul_CHSP
+         |      +-----------------------| (100/100)
+         |      |                       +-----D_pulicaria
+         +------| (91.9/83)
+                |                                     +--Dlongi
+                |                              +------| (96.8/97)
+                |                              |      +--D._dentivera_COI
+                |          +-------------------| (99.7/99)
+                |          |                   |     +--D._galeata_COI
+                |          |                   +-----| (95.7/98)
+                |          |                         +--D_mendotae_NA
+                +----------| (96.9/98)
+                           +----------------------D._curvirostris_COI
+
+Tree in newick format:
+
+(Simocephalus_sp2_NA:0.4924018203,Scapholeberis_NA:1.0127402665,(Cerio_Oman:0.5407225556,((((FIXINB3_mtDNA:0.2738390816,(((Dsin_sRUTU:0.1854909854,D_similis_EUR:0.2272709828)100/100:0.0138015663,Dlum_MO:0.2230171600)100/100:0.0310045650,D_carinata_AUS:0.2813990957)100/100:0.0090191005)100/99:0.0226917736,D_hisp:0.4415529985)95.8/96:0.0853942162,(D_doli:0.2330288194,D_barb:0.2198311327)99.7/100:0.1768665085)93.9/89:0.1231554550,((Dpul_CHSP:0.0423746687,D_pulicaria:0.1240837792)100/100:0.4336994847,(((Dlongi:0.0449020916,D._dentivera_COI:0.0436541417)96.8/97:0.1338826146,(D._galeata_COI:0.0051726099,D_mendotae_NA:0.0047014189)95.7/98:0.1145503469)99.7/99:0.3613764080,D._curvirostris_COI:0.4239456084)96.9/98:0.2133495812)91.9/83:0.1393766979)81.9/69:0.0735196602)82.8/72:0.1054633891);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 10000 bootstrap trees
+Log-likelihood of consensus tree: -10743.711016
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--------------------------Simocephalus_sp2_NA
+|
++-------------------------------------------------------Scapholeberis_NA
+|
+|    +-----------------------------Cerio_Oman
++----| (72)
+     |                +--------------FIXINB3_mtDNA
+     |             +--| (99)
+     |             |  |        +---------Dsin_sRUTU
+     |             |  |     +--| (100)
+     |             |  |     |  +-----------D_similis_EUR
+     |             |  |  +--| (100)
+     |             |  |  |  +-----------Dlum_MO
+     |             |  +--| (100)
+     |             |     +--------------D_carinata_AUS
+     |         +---| (96)
+     |         |   +-----------------------D_hisp
+     |   +-----| (89)
+     |   |     |        +------------D_doli
+     |   |     +--------| (100)
+     |   |              +-----------D_barb
+     +---| (69)
+         |                              +--Dpul_CHSP
+         |      +-----------------------| (100)
+         |      |                       +-----D_pulicaria
+         +------| (83)
+                |                                     +--Dlongi
+                |                              +------| (97)
+                |                              |      +--D._dentivera_COI
+                |          +-------------------| (99)
+                |          |                   |     +--D._galeata_COI
+                |          |                   +-----| (98)
+                |          |                         +--D_mendotae_NA
+                +----------| (98)
+                           +----------------------D._curvirostris_COI
+
+
+Consensus tree in newick format: 
+
+(Simocephalus_sp2_NA:0.4926416005,Scapholeberis_NA:1.0131342299,(Cerio_Oman:0.5409489877,((((FIXINB3_mtDNA:0.2739523628,(((Dsin_sRUTU:0.1855513096,D_similis_EUR:0.2273426926)100:0.0138092415,Dlum_MO:0.2231283955)100:0.0310047556,D_carinata_AUS:0.2815245646)100:0.0090082754)99:0.0227311679,D_hisp:0.4416917516)96:0.0853971439,(D_doli:0.2331091408,D_barb:0.2199287302)100:0.1769360814)89:0.1233064169,((Dpul_CHSP:0.0425547418,D_pulicaria:0.1239929643)100:0.4338408272,(((Dlongi:0.0448731415,D._dentivera_COI:0.0436971912)97:0.1333972571,(D._galeata_COI:0.0051732888,D_mendotae_NA:0.0047006706)98:0.1152314125)99:0.3614291496,D._curvirostris_COI:0.4241117106)98:0.2133504784)83:0.1392489027)69:0.0735126927)72:0.1054060423);
+
+TIME STAMP
+----------
+
+Date and time: Fri Feb 19 20:54:20 2021
+Total CPU time used: 172.547535 seconds (0h:2m:52s)
+Total wall-clock time used: 83.45624709 seconds (0h:1m:23s)
+

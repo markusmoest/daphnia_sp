@@ -1,0 +1,12 @@
+#nexus
+begin sets;
+  charset 16S_12S = sperm_alignment_all.fas: 1-472  1103-1602;
+  charset COI_1 = sperm_alignment_all.fas: 473-1102\3;
+  charset COI_2 = sperm_alignment_all.fas: 474-1102\3;
+  charset COI_3 = sperm_alignment_all.fas: 475-1102\3;
+  charpartition mymodels =
+    TVM+F+I+G4: 16S_12S,
+    GTR+F+I+G4: COI_1,
+    F81+F+I: COI_2,
+    GTR+F+I+G4: COI_3;
+end;
